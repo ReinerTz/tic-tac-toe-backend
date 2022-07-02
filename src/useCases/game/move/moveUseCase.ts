@@ -24,7 +24,7 @@ export class MoveUseCase {
         }
 
         game.lastMove = game.players?.find(data => data.id === playerId)
-        game.squares[square] = game.lastMove?.character as string
+        game.squares[square] = game.lastMove?.character as string 
 
         await service.updateGame(game)
 
